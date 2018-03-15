@@ -51,11 +51,11 @@ void alf(char*str)
 
 			if (k > 1 && k < 5)
 
-				printf("Символ %c встречается %d раза\n", (unsigned char)i, k);
+				printf("%c - %d раза\n", (unsigned char)i, k);
 
 			else
 
-				printf("Символ %c встречается %d раз\n", (unsigned char)i, k);
+				printf("%c - %d раз\n", (unsigned char)i, k);
 
 		}
 
