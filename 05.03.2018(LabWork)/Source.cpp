@@ -170,12 +170,25 @@ void main()
 		else if (nz == 7)
 		{
 			/*7.Дан массив символов, содержащий текст. В строке между словами вставить вместо пробела запятую и пробел*/
-			system("cls");
+			/*system("cls");
 			char str[100] = "Всем доброго дня";
 
 			cout << str << endl;
 			change(str);
-			cout << str << endl;
+			cout << str << endl;*/
+			string s, r;
+			char c;
+
+			s = "Дан массив символов содержащий текст";
+			for (int i = 0; (c = s[i]) != '\0'; i++)
+			{
+				if (c == ' ')
+					r += ',';
+				r += c;
+			}
+
+			cout << s << endl;
+			cout << r << endl;
 
 		}
 
