@@ -6,7 +6,22 @@
 
 using namespace std;
 
-
+void change(char *str)
+{
+	char chs[] = ", ";
+	while (*str) 
+	{
+		if (*str == ' ') 
+		{
+			memcpy(str, chs, strlen(chs));
+			str += strlen(chs);
+		}
+		else
+		{
+			str++;
+		}
+	}
+}
 
 void dinstr(char *str, int r)
 
